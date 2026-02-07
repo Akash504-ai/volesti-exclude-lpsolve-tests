@@ -2,26 +2,27 @@ library(nloptr)
 
 #[-1,1]^2
 A <- rbind(
-  c(1, 0),
-  c(-1, 0),
-  c(0, 1),
-  c(0, -1)
+  c(1, 0),c(-1, 0),c(0, 1),c(0, -1)
 )
 b <- c(1, 1, 1, 1)
 
 eval_f <- function(z) {
   x <- z[1:2]
   r <- z[3]
+
   return(-r)
 }
 
 eval_g <- function(z) {
   x <- z[1:2]
   r <- z[3]
+
   constr <- numeric(nrow(A))
+
   for (i in 1:nrow(A)) {
     constr[i] <- sum(A[i, ] * x) + r * sqrt(sum(A[i, ]^2)) - b[i]
   }
+  
   return(constr)
 }
 
