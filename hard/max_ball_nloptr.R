@@ -1,6 +1,6 @@
 library(nloptr)
 
-# Example: 2D square [-1,1]^2
+#[-1,1]^2
 A <- rbind(
   c(1, 0),
   c(-1, 0),
@@ -9,14 +9,12 @@ A <- rbind(
 )
 b <- c(1, 1, 1, 1)
 
-# Objective: maximize r  → nloptr minimizes, so minimize -r
 eval_f <- function(z) {
   x <- z[1:2]
   r <- z[3]
   return(-r)
 }
 
-# Constraints: A x + r * ||a_i|| <= b
 eval_g <- function(z) {
   x <- z[1:2]
   r <- z[3]
@@ -27,7 +25,6 @@ eval_g <- function(z) {
   return(constr)
 }
 
-# Initial guess
 z0 <- c(0, 0, 0.5)
 
 res <- nloptr(
