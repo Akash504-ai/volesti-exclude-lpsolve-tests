@@ -32,7 +32,7 @@ res <- nloptr(
   eval_f = eval_f,
   eval_g_ineq = eval_g,
   opts = list(
-    algorithm = "NLOPT_LD_MMA",
+    algorithm = "NLOPT_LN_COBYLA",
     maxeval = 1000
   )
 )
