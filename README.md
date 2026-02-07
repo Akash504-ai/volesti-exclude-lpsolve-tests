@@ -41,7 +41,7 @@ Detailed results are documented in `easy/README.md`.
 
 ---
 
-### Medium Test (Planned / In Progress)
+### Medium Test (Completed)
 - Identify **one alternative CRAN package** (excluding nloptr, quadprog, ipop, solveqp) capable of solving LPs
 - Identify **two open-source C++ LP solvers**
 - Compare alternatives with LpSolve in terms of:
@@ -53,7 +53,7 @@ Details will be documented in `medium/README.md`.
 
 ---
 
-### Hard Test (Optional)
+### Hard Test (Completed)
 - Implement maximum inscribed ball computation using **nloptr**
 - Compare results with existing volesti preprocessing
 - Document numerical behavior and limitations
@@ -80,4 +80,5 @@ codebase, contribution workflow, and development practices.
 
 Akash Santra  
 (GSoC 2026 Applicant – GeomScale)
+
 
