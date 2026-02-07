@@ -18,6 +18,8 @@ volesti-exclude-lpsolve-tests/
 │
 ├── hard/
 │ └── README.md # Hard test: max inscribed ball using nloptr (optional)
+|
+├── README.md 
 ```
 
 ---
@@ -78,3 +80,4 @@ codebase, contribution workflow, and development practices.
 
 Akash Santra  
 (GSoC 2026 Applicant – GeomScale)
+
