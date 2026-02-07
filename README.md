@@ -11,15 +11,15 @@ The main goal of this work is to evaluate the current reliance on **LpSolve** in
 volesti-exclude-lpsolve-tests/
 │
 ├── easy/
-│ └── README.md # Easy test: build & run volesti, C++ example, R interface attempt
+│   └── README.md   # Easy test: build & run volesti, C++ example, R interface attempt
 │
 ├── medium/
-│ └── README.md # Medium test: alternative LP solvers (R + C++)
+│   └── README.md   # Medium test: alternative LP solvers (R + C++)
 │
 ├── hard/
-│ └── README.md # Hard test: max inscribed ball using nloptr (optional)
-|
-├── README.md 
+│   └── README.md   # Hard test: maximum inscribed ball using nloptr
+│
+├── README.md       # Project overview
 ```
 
 ---
@@ -80,5 +80,6 @@ codebase, contribution workflow, and development practices.
 
 Akash Santra  
 (GSoC 2026 Applicant – GeomScale)
+
 
 
