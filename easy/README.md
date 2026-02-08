@@ -27,9 +27,8 @@ The goal of this test is to:
 - Clone type: fresh, clean clone (separate from prior development work)
 - Clone location: `~/gsoc-clean/volesti`
 
-Note:  
-The volesti repository does **not** contain a top-level `CMakeLists.txt`.  
-CMake builds are performed from subdirectories such as `examples/`.
+Note:(This is what i observe)  
+The volesti repository does **not** contain a top-level `CMakeLists.txt`.CMake builds are performed from subdirectories such as `examples/`.
 
 ---
 
@@ -108,8 +107,7 @@ Non-fatal warnings:
 - The inner ball is computed **internally during preprocessing**
 - This step is required before volume computation and sampling
 
-Relevant internal logic is implemented in:
-include/generators/convex_bodies_generator.h
+Relevant internal logic is implemented in: `include/generators/convex_bodies_generator.h`
 
 This confirms that the LpSolve is a **core dependency** in the preprocessing pipeline.
 
@@ -168,4 +166,5 @@ Likely cause:
 - Toolchain sensitivity further motivates replacing LpSolve
 
 **Easy test completed successfully.**
+
 
